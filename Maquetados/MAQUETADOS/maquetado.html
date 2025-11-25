@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mnav{
+            background-color: rgb(47, 210, 14); 
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            margin-top: 5%;
+            margin: 20px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        h1{
+            color: rgb(18, 18, 18);
+        }
+        body {
+            margin:0;
+        }
+        #izquierda{
+           background-color: rgb(4, 161, 72);
+              width: 30%;
+                height: 500px;
+                text-align: center;
+                margin: 30px;
+                margin-left: 50px;
+                margin-right: 30px;
+                border-radius: 10px;
+            
+        }
+        #arriba{
+            background-color: rgb(0, 255, 136);
+            width: 90%;
+            height: 200px;
+            text-align: center;
+            margin: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 10px;
+           
+        }
+        #abajo{
+            background-color: rgb(0, 255, 136);
+            width: 90%;
+            height: 200px;
+            text-align: center;
+            margin: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+        #derecha{
+            background-color: rgb(4, 161, 72);
+            width: 30%;
+            height: 500px;
+            text-align: center;
+            margin: 30px;
+            margin-left: 50px;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+        #footer{
+            background-color: rgb(47, 210, 14);
+            width: 100%;
+            height: 70px;
+            margin: 20px;
+            margin-right: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        main{
+            width: 50%;
+        }
+        #padre{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+   <header id="mnav" class="contenedor_navegacion">
+       <h1>Contenedor Nav</h1>
+    
+   </header>
+    <div id="padre">
+        <div id="izquierda">
+            <h1>NAV</h1>
+        </div>
+         <main>
+            <div id="arriba" class="vertical">
+                    <h1>ARTICLE</h1>
+            </div>
+            <div id="abajo" class="vertical">
+                <h1>ARTICLE</h1>
+            </div>
+         </main>
+        <div id="derecha">
+            <h1>ASIDE</h1>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>

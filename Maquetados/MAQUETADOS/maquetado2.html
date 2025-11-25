@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                margin:0;
+                padding: 7px;
+                
+            }
+            #header{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                
+             }
+            .top{
+                background-color: rgb(148, 0, 254);
+                width: 100%;
+                height: 40px;
+                border-radius: 20px;
+                box-shadow: 3px 3px 30px rgb(111, 111, 110);
+                background: linear-gradient(45deg, rgb(8, 81, 249) 0%, rgb(25, 243, 239) 50%, rgb(255, 6, 234) 100%);
+                border: 2px solid rgb(78, 78, 78);
+            }
+            .medium{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            #uno{
+
+                background-color: rgb(200, 11, 221);
+                width: 15%;
+                height: 30px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #dos{
+                background-color: rgb(216, 6, 239);
+                width: 15%;
+                height: 30px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #tres{
+                background-color: rgb(216, 6, 239);
+                width: 50%;
+                height: 30px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #cuatro{
+                background-color: rgb(216, 6, 239);
+                width: 8%;
+                height: 30px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            .bootom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+            #b-1,#b-9{
+                background-color: rgb(216, 6, 239);
+                width: 15%;
+                height: 40px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #b-2,#b-3,#b-4,#b-5,#b-6,#b-7,#b-8{
+                background-color: rgb(2, 192, 255);
+                height: 10px;
+                width: 8%;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #content{
+                width: 100%;
+                display: flex;
+                margin-top: 20px;
+        
+            }
+            .izquierda{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                gap: 20px;
+                
+            }
+            .derecha{
+                background-color: rgb(187, 0, 255);
+                width: 60%;
+                height: 300px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+
+            }
+            #arriba{
+                background-color: rgb(9, 162, 244);
+                width: 80%;
+                height: 138px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+
+            }
+            #abajo{
+                background-color: rgb(9, 162, 244);
+                width: 80%;
+                height: 138px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+
+            }
+            .tarjeta{
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+            #t1, #t2, #t3, #t4, #t5, #t6{
+                background-color: rgb(9, 162, 244);
+                width: 15%;
+                height: 100px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+               
+            }
+            .Cprincipal{
+                background-color: rgb(9, 162, 244);
+                width: 90%;
+                margin: 40px auto;
+                padding: 20px;
+                border-radius: 20px;
+                position: relative;
+
+            }
+            #Bsuperior{
+                background-color: rgb(9, 162, 244);
+                height: 150px;
+                border-radius: 20px;
+                display: flex;
+                margin-top: 10px;
+                padding: 10px;
+                position: relative;
+                z-index: 1;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #cu1, #cu2{
+                background-color: rgb(148, 0, 254);
+                width: 15%;
+                height: 30px;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+                margin-right: 10px;
+            }
+            #bu{
+                background-color: rgb(216, 6, 239);
+                width: 40%;
+                height: 30px;
+                margin-left: auto;
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #Ctarjetas{
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                top: -90px;
+                z-index: 2;
+            
+            }
+            #tar1, #tar2, #tar3, #tar4, #tar5{
+                background-color: rgb(179, 6, 253);
+                width: 17%;
+                height: 150px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            .tar1{
+                position: relative;
+                background-color: rgb(8, 81, 249);
+                width: 17%;
+                height: 150px;
+                border-radius: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 5px;
+                gap: 3px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: 2px solid rgb(78, 78, 78);
+                transition: all 0.3s ease;
+            }
+            .tar1:hover{
+                transform: translateY(-10px);
+                box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+                background-color: rgb(0, 255, 64);
+                cursor: pointer;
+            }
+            .tar1:hover #img{
+                background-color: rgb(255, 255, 255);
+            }
+            .tar1:hover #l1, .tar1:hover #l2, .tar1:hover #lc{
+                background-color: rgb(255, 255, 255);
+            }
+            .tar1:hover #cp{
+                background-color: rgb(255, 255, 255);
+            }.tar1:hover #minicuadro{
+                background-color: rgb(255, 255, 255);
+            }
+
+            
+
+            #minicuadro{
+                background-color: rgb(148, 0, 254);
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #img{
+                background-color: rgb(216, 6, 239);
+                width: 60%;
+                height: 60px;
+                margin-left: 20%;
+                border-radius: 10px;
+                border: 2px solid rgb(78, 78, 78);
+             }
+            #l1{
+                background-color: rgb(216, 6, 239);
+                width: 100%;
+                height: 10px;
+                border-radius: 10px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #l2{
+                background-color: rgb(216, 6, 239);
+                width: 100%;
+                height: 10px;
+                border-radius: 10px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            #lc{
+                background-color: rgb(216, 6, 239);
+                width: 60%;
+                height: 10px;
+                border-radius: 10px;
+                border: 2px solid rgb(78, 78, 78);
+            }  
+            #cp{
+                background-color: rgb(216, 6, 239);
+                width: 20%;
+                height: 20px;
+                align-self: flex-end;
+                margin-top: 1px;
+                border-radius: 10px;
+                border: 2px solid rgb(78, 78, 78);
+            }
+            .cuadros{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+            }
+            #izq{
+                background-color: rgb(9, 162, 244);
+                width: 48%;
+                height: 200px;
+                border-radius: 20px;
+                border:  2px solid rgb(86, 86, 86);
+            }
+            #der{
+                background-color: blueviolet;
+                width: 48%;
+                height: 200px;
+                border-radius: 20px;
+                border:  2px solid rgb(86, 86, 86);
+
+            }
+
+        #seccion-inferior {
+            background-color: rgb(9, 162, 244);
+            width: 98%;
+            padding: 20px;
+            border:  2px solid rgb(86, 86, 86);
+            border-radius: 20px;
+        }
+
+        #barra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(148, 0, 254);
+            padding: 10px;
+            border:  2px solid rgb(86, 86, 86);
+            border-radius: 20px;
+            margin-bottom: 5px;
+        }
+
+        .iconos {
+            display: flex;
+            gap: 8px;
+        }
+
+        .icono {
+            width: 20px;
+            height: 20px;
+            background-color: #08e5e9;
+            border-radius: 4px;
+            border:  2px solid rgb(86, 86, 86);
+            border-radius: 20px;
+        }
+
+        .buscador {
+            width: 100px;
+            height: 15px;
+            background-color: #ec2be9;
+            border-radius: 5px;
+            border:  2px solid rgb(86, 86, 86);
+            border-radius: 20px;
+        }
+
+        #tarjetas {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .tarjeta2 {
+            width: 15%;
+            height: 150px;
+            background-color: rgb(8, 81, 249);
+            padding: 10px;
+            border:  2px solid rgb(86, 86, 86);
+            border-radius: 20px;
+            flex-direction: column;
+        }
+
+        .imagen {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(148, 0, 254);
+            border:  2px solid rgb(86, 86, 86);
+            border-radius: 20px;
+            margin-bottom: 8px;
+        }
+
+        .texto {
+            width: 100%;
+            height: 10px;
+            background-color:rgb(216, 6, 239);
+            margin-bottom: 5px;
+            border:  2px solid rgb(86, 86, 86);
+            border-radius: 20px;
+        }
+
+        .boton {
+            width: 30%;
+            height: 10px;
+            background-color: rgb(216, 6, 239);
+            border-radius: 3px;
+            margin-top: 5px;
+            border:  2px solid rgb(86, 86, 86);
+            border-radius: 20px;
+        }
+        
+
+
+
+
+        </style>
+
+    </head>
+     <body>
+    
+    <div id="header">
+        <div class="top">
+        
+        </div>
+        <div class="medium">
+            <div id="uno"></div>
+
+            <div id="dos"></div>
+
+            <div id="tres"></div>
+
+            <div id="cuatro"></div>
+
+        </div>
+        <div class="bootom">
+            <div id="b-1"></div>
+            <div id="b-2"></div>
+            <div id="b-3"></div>
+            <div id="b-4"></div>
+            <div id="b-5"></div> 
+            <div id="b-6"></div>
+            <div id="b-7"></div>
+            <div id="b-8"></div>
+            <div id="b-9"></div>
+
+        </div>
+    </div>
+        
+        <div id="content">
+            <div class="izquierda">
+                <div id="arriba"></div>
+                <div id="abajo"></div>
+            </div>
+
+            <div class="derecha"></div>
+        </div>
+
+        <div class="tarjeta">
+            <div id="t1">
+                <div></div>
+                <div></div>
+            </div>
+            <div id="t2">
+                <div></div>
+                <div></div>
+            </div>
+            <div id="t3">
+                <div></div>
+                <div></div>
+            </div>
+            <div id="t4">
+                <div></div>
+                <div></div>
+            </div>
+            <div id="t5">
+                <div></div>
+                <div></div>
+            </div>
+            <div id="t6">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="cprincipal">
+            <div id="Bsuperior">
+                <div id="cu1"></div>
+                <div id="cu2"></div>
+                <div id="bu"></div>
+            </div>
+
+            <div id="Ctarjetas">
+                <div class="tar1">
+                    <div id="minicuadro"></div>
+                    <div id="img"></div>
+                    <div id="l1"></div>
+                    <div id="l2"></div>
+                    <div id="lc"></div>
+                    <div id="cp"></div>
+                    
+
+                </div>
+                <div id="tar2"></div>
+                <div id="tar3"></div>
+                <div id="tar4"></div>
+                <div id="tar5"></div>
+            </div>
+
+        </div>
+
+        <div class="cuadros">
+            <div id="izq"></div>
+            <div id="der"></div>
+        </div>
+
+
+
+        <div>
+        <div id="seccion-inferior">
+            <div id="barra">
+                <div class="iconos">
+                    <div class="icono"></div>
+                    <div class="icono"></div>
+                </div>
+                <div class="buscador"></div>
+            </div>
+
+            <div id="tarjetas">
+                <div class="tarjeta2" id="tarjeta1">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                    <div class="boton"></div>
+                </div>
+
+                <div class="tarjeta2" id="tarjeta2">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                    <div class="boton"></div>
+                </div>
+
+                <div class="tarjeta2" id="tarjeta3">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                    <div class="boton"></div>
+                </div>
+
+                <div class="tarjeta2" id="tarjeta4">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                    <div class="boton"></div>
+                </div>
+
+                <div class="tarjeta2" id="tarjeta5">
+                    <div class="imagen"></div>
+                    <div class="texto"></div>
+                    <div class="texto"></div>
+                    <div class="boton"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    </body>
+</html>

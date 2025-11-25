@@ -14,7 +14,7 @@ else if (edad >= 60) {
 
 //operador ternario
 
-(edad > 0 && edad < 12)? alert("infantil") :
+(edad >= 0 && edad < 12)? alert("infantil") :
 (edad >= 13 && edad <= 17)? alert("adolescente") :
 (edad >= 18 && edad <= 59)? alert("adulto") :
 (edad >= 60)? alert("adulto mayor") :
