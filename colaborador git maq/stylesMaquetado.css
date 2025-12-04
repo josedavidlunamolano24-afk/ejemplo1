@@ -1,0 +1,169 @@
+/*Quito las margenes de la pagina con el BODY*/
+body{
+    margin: 0;   
+    padding: 0;
+}
+.header{
+    width: auto; 
+    height: 70px;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /*le damos smargien en toda la pantalla*/
+    align-items: center; /*Centramos verticalmente*/
+    
+}
+.header .logo{
+    color: white;
+}
+.header .nav a{
+    color: white;
+    text-decoration: none; /*quitamos la linea de abajo que lleva las palabras*/
+    margin: 2px 10px;  /*damos espacio entre palabras*/
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}
+.portada {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 300px;
+    padding: 20px;
+}
+.portada .izquierda{
+    background-color: rgb(100, 100, 148);
+    width: 70%;
+    align-items: center; /*Centramos verticalmente*/
+}
+
+.portada .izquierda .titulo_top{
+    font-size: 24px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+.portada .izquierda .msj_bienvenida{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    
+}
+.portada .izquierda .botones .btn_negro{
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; /*determina el tipo de cursor que va en el contenedor*/
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    margin-left: 200px;
+}
+.portada .izquierda .botones .btn_blanco{
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; /*determina el tipo de cursor que va en el contenedor*/
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+}
+.portada .derecha{
+    background-color: rgb(179, 180, 233);
+    width: 70%;
+    padding-left: 20px; /*Le colocamos el espacio entre el contenedor de la izquierda*/
+}
+.img_derecha img{
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7e5c8;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      padding: 15px 30px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+      justify-content: center;
+    }
+
+    .nav span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background: #fafafa;
+    }
+
+    .services-container {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .services-container h2 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    .grid {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 2px solid #000;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .card {
+      padding: 40px 25px;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+      background: #fff;
+    }
+
+    .card:nth-child(3n) {
+      border-right: none;
+    }
+    .card:nth-last-child(-n+3) {
+      border-bottom: none;
+    }
+
+    .card.dark p {
+      background: #0e0e0e;
+      color: #fff;
+    }
+
+    .card img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .card.dark p {
+      color: #ccc;
+    }
