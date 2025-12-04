@@ -1,13 +1,181 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Lineas Horizontales</title>
-    </head>
-      <body>
-        <h1 style="color: crimson;">LINEAS HORIZONTALES</h1>
-        <P style="color: bisque;">AQUI SE APLICA LA LINEA HORIZONTAL</P>
-         <Hr>
-            <h2>Contenido</h2>
-            <p>estiquetas de parrafo</p>
-        </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .encabezado, .titulo-seccion {
+            width: 100%;
+            height: 20px;
+            background: #ccc;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .menu-superior {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .menu-superior div {
+            width: 60px;
+            height: 20px;
+            background: #ccc;
+            border-radius: 20px;
+        }
+
+        .principal {
+            display: flex;
+            gap: 20px;
+        }
+
+        .caja-grande {
+            width: 60%;
+            height: 250px;
+            background: #777;
+            border-radius: 10px;
+        }
+
+        .informacion {
+            width: 40%;
+        }
+
+        .linea {
+            width: 80%;
+            height: 20px;
+            background: #777;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .linea-pequena {
+            width: 50%;
+            height: 15px;
+            background: #777;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .tres-cajas {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tres-cajas div {
+            width: 60px;
+            height: 60px;
+            background: #555;
+            border-radius: 10px;
+        }
+
+        .fila {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .elemento {
+            width: 150px;
+            height: 170px;
+            background: #999;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .caja-imagen {
+            width: 100%;
+            height: 80px;
+            background: #555;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .linea-texto {
+            width: 100%;
+            height: 10px;
+            background: #777;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-superior">
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="principal">
+        <div class="caja-grande"></div>
+
+        <div class="informacion">
+            <div class="linea"></div>
+            <div class="linea-pequena"></div>
+            <div class="linea" style="width: 60%;"></div>
+            <div class="linea-pequena" style="width: 40%;"></div>
+        </div>
+    </div>
+
+    <div class="tres-cajas">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="titulo-seccion"></div>
+
+    <div class="fila">
+        <div class="elemento">
+            <div class="caja-imagen"></div>
+            <div class="linea-texto"></div>
+            <div class="linea-texto" style="width: 70%;"></div>
+        </div>
+
+        <div class="elemento">
+            <div class="caja-imagen"></div>
+            <div class="linea-texto"></div>
+            <div class="linea-texto" style="width: 70%;"></div>
+        </div>
+
+        <div class="elemento">
+            <div class="caja-imagen"></div>
+            <div class="linea-texto"></div>
+            <div class="linea-texto" style="width: 70%;"></div>
+        </div>
+    </div>
+
+    <div class="titulo-seccion"></div>
+
+    <div class="fila">
+        <div class="elemento">
+            <div class="caja-imagen"></div>
+            <div class="linea-texto"></div>
+            <div class="linea-texto" style="width: 70%;"></div>
+        </div>
+
+        <div class="elemento">
+            <div class="caja-imagen"></div>
+            <div class="linea-texto"></div>
+            <div class="linea-texto" style="width: 70%;"></div>
+        </div>
+
+        <div class="elemento">
+            <div class="caja-imagen"></div>
+            <div class="linea-texto"></div>
+            <div class="linea-texto" style="width: 70%;"></div>
+        </div>
+    </div>
+
+</body>
 </html>

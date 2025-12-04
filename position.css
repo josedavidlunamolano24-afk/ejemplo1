@@ -1,0 +1,32 @@
+/*position
+
+static uno encima del otro*
+relative: mover un poquito left top
+absolute: busca elemento padre con position diferente de static y se posiciona respecto a el
+fixed: elemento que se queda fijo en la pantalla aunque hagas scroll
+sticky: elkemento que se comporta normal hasta que haces scroll y llega a un punto donde se queda fijo
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aqua;
+}
+.card {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+img {
+    width: 125px;
+    height: 125px;
+    border-radius: 20%;
+    position: relative;
+    /* left: 30px; mueve la imagen 30px a la derecha */
+}

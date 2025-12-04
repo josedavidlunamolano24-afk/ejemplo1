@@ -1,0 +1,60 @@
+/*position
+static: uno encima del otro
+relative: mueve un poco el elemento con un relf
+absolute: busca el elemento padre para ubicarse
+fixed: elemento que se queda pegado 
+sticky: elemento que se comporta normal pero que al hacer scroll se pega hasta ese punto. 
+*/
+body {
+    display: flex;     
+    justify-content: center;   
+    align-items: center;  
+    height: 100vh;    
+    background-color: grey;  
+}
+.card{     
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px black;
+    text-align: center;
+    overflow: scroll;
+}
+img{
+    margin-top: 30px;
+    width: 125px; 
+    
+}
+.imgStatic{
+    position: fixed; 
+    position: static;
+}
+
+.imgRelative{   
+    width: 125px;
+    position: relative; 
+    top: 20px;
+}
+
+.imgAbsolute{
+    width: 125px;
+    position: absolute; /*tambien funciona con posisiones*/
+    left: 50%;
+
+}
+
+.imgFixed{
+     width: 125px;
+     position: fixed; /*tambien posision*/
+     top: 20px;
+     left: 50%;
+}
+
+.imgSticky{
+    width: 125px;
+    position: sticky;
+    top: 20px;
+
+
+}
